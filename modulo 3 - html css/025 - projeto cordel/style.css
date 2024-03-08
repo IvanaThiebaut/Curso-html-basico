@@ -12,6 +12,7 @@
 :root {
     --font01: 'passion-one';
     --font02: 'sriracha';
+    --font03: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -20,6 +21,7 @@
 }
 
 html, body{
+    font-family: var(--font03);
     min-height: 100vh;
     background-color: #777676;
 }
@@ -38,7 +40,7 @@ header > h1 {
 
     font-family: var(--font01);
     font-weight: lighter;
-    font-size: 5em;
+    font-size: 10vh;
     color: #fff;
 }
 
@@ -63,8 +65,13 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-
+    font-family: var(--font02);
+    font-size: 2vw;
 } 
+
+section > p {
+    padding-bottom: 2em;
+}
 
 section.normal {
     background-color: #fff;
@@ -72,15 +79,29 @@ section.normal {
 }
 
 section.imagem {
-    background-color: #2e2e2e;
+    background-color: #777676;
     color: #fff;
+    box-shadow: inset 6px 6px 13px 0px #00000096;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
 }
 
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+}
 
 
 footer {
