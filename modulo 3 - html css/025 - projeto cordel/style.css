@@ -19,32 +19,23 @@
     padding: 0px;
 }
 
-body{
+html, body{
+    min-height: 100vh;
     background-color: #777676;
 }
 
-p {
-    font-family: var(--font02);
-    font-size: 2em;
-}
-header.titulo {
+header {
     background-color: #000;
-    height: 300px;
     color: #fff;
+    text-align: center;
 
     position: relative;
 }
 
-div.conteudo {
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
 
-header > div > h1 {
-    text-decoration: none;
     font-family: var(--font01);
     font-weight: lighter;
     font-size: 5em;
@@ -52,13 +43,49 @@ header > div > h1 {
 }
 
 header > p {
+    padding-bottom: 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.box-branco {
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+
+} 
+
+section.normal {
     background-color: #fff;
-    height: 500px;
-    padding: auto;
-    box-shadow: 2px 2px 7px #000000a6;
+    color: #000;
+}
+
+section.imagem {
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+
+
+footer {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
 }
