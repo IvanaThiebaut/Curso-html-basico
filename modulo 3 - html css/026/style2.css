@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+caption {
+    font-size: 1,5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #d7dcdd;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: #a0a6a8;
+}
+
+thead, tfoot {
+    background-color: #a0a6a8;
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: #e0e7e9;
+}
+
+td.num {
+    text-align: right;
+}
+strong {
+    color: rgb(219, 3, 75);
+}
